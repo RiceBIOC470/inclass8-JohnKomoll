@@ -57,5 +57,4 @@ disp(align5)
 % score penalized larger gaps even more heavily. In combination, these two
 % conditions create an alignment that has very few gaps at all, with the
 % existing gaps being very short. The resulting alignment is most similar
-% to creating a high GapOpen score, but penalized larger gaps to an even
-% higher degree.
+% to creating a high GapOpen score, but 
