@@ -1,3 +1,5 @@
+%AW: see comments below. 0.9/1.
+
 %Inclass assignment 8
 
 %Using the swalign function
@@ -17,6 +19,8 @@ disp(align)
 
 % D. run swalign with much higher and lower values of the GapOpen parameter
 % and explain the results. 
+
+%Aw: this uses the amino acid alphabet by default. use 'nt'. -0.05. 
 [score2, align2, start2] = swalign(sequence, sequence2, 'GapOpen', 1, 'Showscore', true);
 disp(' ')
 disp(align2)
@@ -51,6 +55,9 @@ disp(align4)
 [score5, align5, start5] = swalign(sequence, sequence2, 'ExtendGap', 15, 'Showscore', true);
 disp(' ')
 disp(align5)
+
+%AW: the question asked for a a low value of ExtendGap so it is the opposite - it will form fewer
+% gaps but they will be larger. -0.05. 
 
 % Without a low GapOpen value, the alignment will have fewer single gaps,
 % as these will be more heavily penalized. The addition of a high ExtendGap
